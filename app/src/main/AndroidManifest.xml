@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="edu.angelo.finalprojectgupton"
+    android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Adding tools:ignore fixed the warning here -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CS3372Gupton Maze Runner!"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="edu.angelo.finalprojectgupton.MazeRunnerGame"
+            android:label="CS3372Gupton Maze Runner!"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
